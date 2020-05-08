@@ -1,3 +1,4 @@
+// my solution
 function alphabetPosition(text) {
   let results = [];
   let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
@@ -13,4 +14,14 @@ function alphabetPosition(text) {
 
   results = results.join(" ");
   return results;
+}
+
+// better solution
+
+function alphabetPosition(text) {
+  return text
+    .toUpperCase()
+    .match(/[a-z]/gi)
+    .map((c) => c.charCodeAt() - 64)
+    .join(" ");
 }

@@ -26,7 +26,7 @@ function dirReduc(arr) {
   return arr;
 }
 
-// BETTER SOLUTION
+// BETTER SOLUTIONS
 
 function dirReduc(plan) {
   var opposite = {
@@ -40,4 +40,11 @@ function dirReduc(plan) {
     else dirs.push(dir);
     return dirs;
   }, []);
+}
+
+function dirReduc(arr) {
+  var str = arr.join(""),
+    pattern = /NORTHSOUTH|EASTWEST|SOUTHNORTH|WESTEAST/;
+  while (pattern.test(str)) str = str.replace(pattern, "");
+  return str.match(/(NORTH|SOUTH|EAST|WEST)/g) || [];
 }

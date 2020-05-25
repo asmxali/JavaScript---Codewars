@@ -36,3 +36,10 @@ function toCamelCase(str) {
     return match.charAt(1).toUpperCase();
   });
 }
+
+//  PSEUDOCODE
+
+// 1. Split the string wherever dash or underscore appears
+// 2. Take the the character at index 0 of each word and capitilize it
+//      -check if the first letter is capitalized and alter accordingly
+// 3. Join the words back together as a string

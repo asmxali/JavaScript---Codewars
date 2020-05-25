@@ -1,5 +1,10 @@
-// MY SOLUTION
+// PSEUDOCODE
 
+// 1. Take data from array and change the output using .map() method
+// 2. In the .map() method filter each array element using an if statement
+// 3. Depending on the element return the string 'Senior' or 'Open'
+
+// MY SOLUTION
 function openOrSenior(data) {
   // ...
   // create an empty variable to store results
